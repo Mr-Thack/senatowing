@@ -225,6 +225,14 @@
       #impact .animated #impact-counter {
         text-shadow: 0 0 20px rgba(31, 60, 136, 0.3);
       }
+
+      a[href^="mailto:"] {
+        transition: all 0.3s ease;
+      }
+
+      a[href^="mailto:"]:hover {
+        transform: translateY(-1px);
+      }
     </style>
 
     <!-- JSON-LD LocalBusiness schema -->
@@ -234,6 +242,7 @@
         "@type": "LocalBusiness",
         "name": "Sena Towing LLC",
         "telephone": "+1 (404) 936-7108",
+        "email": "senatire@gmail.com",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Kennesaw",
@@ -465,8 +474,20 @@
           <i class="bi bi-telephone-fill me-2"></i>
           <strong>+1 (404) 936-7108</strong>
         </a>
-        <p class="mt-3 mb-0">
+        <p class="mt-3 mb-2">
           Available 24/7 for Emergency Roadside Assistance
+        </p>
+        <p class="mb-0">
+          <small>
+            Non-urgent inquiries:
+            <a
+              href="mailto:senatire@gmail.com"
+              class="text-primary text-decoration-none"
+            >
+              <i class="bi bi-envelope-fill me-1"></i>
+              <strong>senatire@gmail.com</strong>
+            </a>
+          </small>
         </p>
       </div>
     </section>
@@ -489,6 +510,12 @@
             <p class="mb-1">
               <i class="bi bi-telephone-fill me-1"></i>
               <strong>+1 (404) 936-7108</strong>
+            </p>
+            <p class="mb-1">
+              <i class="bi bi-envelope-fill me-1"></i>
+              <a href="mailto:senatire@gmail.com" class="text-decoration-none">
+                senatire@gmail.com
+              </a>
             </p>
             <p class="mb-0">[HOURS HERE]</p>
           </div>
